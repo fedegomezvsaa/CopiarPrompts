@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiar texto</title>
+</head>
+<body>
+    <textarea id="text-to-copy" style="opacity:0;">Tu texto a copiar</textarea>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var copyText = document.getElementById('text-to-copy');
+            copyText.select();
+            document.execCommand('copy');
+            alert('Texto copiado al portapapeles');
+        });
+    </script>
+</body>
+</html>
