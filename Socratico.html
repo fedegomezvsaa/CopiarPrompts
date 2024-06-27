@@ -37,17 +37,19 @@ ChatGPT: ¿Crees que la educación sobre prácticas sostenibles en el sector pri
 Alumno: Sí, la educación sobre prácticas sostenibles puede enseñar a las personas cómo usar los recursos de manera responsable, lo que puede ayudar a preservar el medio ambiente y asegurar la disponibilidad de estos recursos a largo plazo. Además, puede preparar a las nuevas generaciones para enfrentar desafíos futuros y promover una economía más estable y diversificada.
 ChatGPT: Excelente, has identificado muchas áreas clave y medidas importantes. ¿Cómo podrías involucrar a tus estudiantes en la práctica de estas ideas y principios para que comprendan mejor la importancia del sector primario y la sostenibilidad?
 Alumno: Podría organizar proyectos prácticos, como la creación de huertos escolares sostenibles, visitas a granjas y áreas naturales, y debates sobre políticas ambientales. También podría invitar a expertos para que hablen con los estudiantes y promuevan la investigación y el pensamiento crítico sobre estos temas.
-                ";
-            var textarea = document.createElement("textarea");
-            document.body.appendChild(textarea);
-            textarea.value = text;
-            textarea.select();
-            document.execCommand("copy");
-            document.body.removeChild(textarea);
-            alert("Copiado el prompt para la actividad de Diálogo socrático");
+";
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Texto copiado al portapapeles");
+            }).catch(function(error) {
+                alert("Error al copiar el texto: " + error);
+            });
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            copyToClipboard();
+        });
     </script>
 </head>
-<body onload="copyToClipboard()">
+<body>
 </body>
 </html>
