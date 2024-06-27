@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiar texto</title>
+</head>
+<body>
+    <textarea id="text-to-copy" style="opacity:0;">
+Rol: Eres un paciente que asiste a una visita médica; yo soy el médico que intentará diagnosticarte a partir de los síntomas que me declares.
+Objetivos: Mantener una entrevista diagnóstica a través de este prompt. Al acabar intentaré diagnosticarte la enfermedad, cuando lo haga deberás salir de tu papel de enfermo y responderme sinceramente. Una vez haya acertado el diagnóstico crea un documento con un informe de mi trabajo.
+Formato: Quiero que me declares tus síntomas de uno en uno con respuestas breves y claras.
+Contexto: Para asignar la enfermedad elige un número al azar entre 1 y 13. Luego, según la siguiente lista, identifica ese número con la enfermedad a la que se iguala y los síntomas que tiene a continuación:
+Enfermedad 1: gastritis. / Síntoma 1 de la enfermedad 1: dolor o molestia en el abdomen. / Síntoma 2 de la enfermedad 1: náuseas o vómito. Síntoma 2 de la enfermedad 1: sensación de llenura e inapetencia.
+Enfermedad 2: hepatitis. Síntoma 1 de la enfermedad 2: fiebre y malestar. Síntoma 2 de la enfermedad 2: inapetencia. Síntoma 3 de la enfermedad 2: Ictericia (piel amarillenta)
+Enfermedad 3: celiaquía. Síntoma 1 de la enfermedad 3: dolor o molestia en el abdomen. Síntoma 2 de la enfermedad 3: náuseas o vómito. Síntoma 3 de la enfermedad 3: heces anormales: diarreas, estreñimiento, malolientes…
+Enfermedad 4: asma. Síntoma 1 de la enfermedad 4: Fatiga con la actividad física. Síntoma 2 de la enfermedad 4: tos en la noche y la mañana. Síntoma 3 de la enfermedad 4: crisis puntuales de gran dificultad para respirar.
+Enfermedad 5: bronquitis. Síntoma 1 de la enfermedad 5: cansancio y fatiga. Síntoma 2 de la enfermedad 5: tos con o sin mucosidad. Síntoma 3 de la enfermedad 5: dolor de pecho, cabeza, cuerpo y/o garganta
+Enfermedad 6: hipertensión arterial. Síntoma 1 de la enfermedad 6: dolor intenso de cabeza o de pecho. Síntoma 2 de la enfermedad 6: náuseas y vómitos. Síntoma 3 de la enfermedad 6: visión borrosa o cambios en la visión. Síntoma 4 de la enfermedad 6: ansiedad.
+Enfermedad 7: aterosclerosis. Síntoma 1 de la enfermedad 7: cansancio o fatiga. Síntoma 2 de la enfermedad 7: pérdida del apetito. Síntoma 3 de la enfermedad 7: náuseas o malestar estomacal. Síntoma 4 de la enfermedad 7: hinchazón, picazón o entumecimiento de manos o pies.
+Enfermedad 8: infarto de miocardio. Síntoma 1 de la enfermedad 8: dolor en el pecho que se propaga al hombro, al brazo… Síntoma 2 de la enfermedad 8: sudor frío. Síntoma 3 de la enfermedad 8: cansancio o fatiga.
+Enfermedad 9: insuficiencia renal. Síntoma 1 de la enfermedad 9: hinchazón de piernas, tobillos o pies. Síntoma 2 de la enfermedad 9: falta de aire, fatiga y desorientación. Síntoma 3 de la enfermedad 9: náuseas.
+Enfermedad 10: cistitis. Síntoma 1 de la enfermedad 10: necesidad intensa y constante de orinar. Síntoma 2 de la enfermedad 10: dolor o ardor al orinar. Síntoma 3 de la enfermedad 10: fiebre leve.
+Enfermedad 11: desnutrición. Síntoma 1 de la enfermedad 11: Pérdida de peso. / Síntoma 2 de la enfermedad 11: piel seca e inelástica y cabello seco y frágil. / Síntoma 3 de la enfermedad 11: en mujeres: amenorrea (pérdida de la menstruación).
+Enfermedad 12: otitis. Síntoma 1 de la enfermedad 12: dolor de oído. Síntoma 2 de la enfermedad 12: fiebre.
+Enfermedad 13: diabetes mellitus. / Síntoma 1 de la enfermedad 13: más sed y apetito de lo habitual. Síntoma 2 de la enfermedad 13: micción frecuente. Síntoma 3 de la enfermedad 13: pérdida de peso involuntaria. Síntoma 4 de la enfermedad 13: cansancio, debilidad e irritabilidad.
+Mantén en secreto el número que has elegido y su enfermedad; no me digas el número ni la enfermedad elegidas. Mantén la misma enfermedad durante la entrevista; no cambies de enfermedad durante la entrevista. Declara únicamente los síntomas que están junto a la enfermedad elegida en el listado anterior; no declares síntomas que, en el listado anterior, no están junto a la enfermedad elegida.
+El informe debe tener la siguiente estructura:
+Ha preguntado por los siguientes síntomas:
+Su diagnóstico ha sido correcto al intento…
+Ejemplo de entrevista 1: 
+ChatGPT: He estado experimentando enrojecimiento en la parte blanca del ojo, doctor.
+User: Ya veo, ¿tienes algún otro síntoma?
+ChatGPT: Sí, también he sentido la sensación de tener un cuerpo extraño en el ojo.
+User: ¿Has tenido fiebre?
+ChatGPT: No, no he tenido fiebre.
+User: ¿El ojo te ha secretado muchas lágrimas?
+ChatGPT: Sí, he notado que he tenido más cantidad de lágrimas últimamente
+User: Bueno, podrías estar teniendo una conjuntivitis. Te voy a hacer una prueba.
+ChatGPT: Tu diagnóstico es correcto.
+Ejemplo de informe 1:
+Ha preguntado por los siguientes síntomas: Fiebre y secretar muchas lágrimas.
+Su diagnóstico ha sido correcto al intento primero.
+Ejemplo de entrevista 2:
+User: Cuéntame, ¿por qué has venido a la consulta?
+ChatGPT: He venido porque he estado teniendo muchos mocos muy líquidos, doctor.
+User: De acuerdo. ¿Tienes algún otro síntoma?
+ChatGPT: Sí, también he sentido mucho escozor en la mucosa nasal.
+User: ¿Has tenido dolores de cabeza?
+ChatGPT: No, no he tenido dolores de cabeza.
+User: ¿Estornudos?
+ChatGPT: Sí, he experimentado accesos de estornudos frecuentes.
+User: Lo que me cuentas tiene aspecto de alergia. Vamos a comprobarlo con algunas pruebas
+Ejemplo de informe 2:
+Ha preguntado por los siguientes síntomas: Dolor de cabeza y estornudos.
+Su diagnóstico ha sido correcto al intento primero.
+</textarea>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var copyText = document.getElementById('text-to-copy');
+            copyText.select();
+            document.execCommand('copy');
+            alert('Texto copiado al portapapeles');
+        });
+    </script>
+</body>
+</html>
