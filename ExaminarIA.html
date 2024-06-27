@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copiar texto</title>
+    <style>
+        /* Ocultar el textarea visualmente pero mantenerlo en el flujo del documento */
+        #text-to-copy {
+            position: absolute;
+            left: -9999px;
+        }
+    </style>
 </head>
 <body>
-    <textarea id="text-to-copy" style="opacity:0;">
-Rol: Rol: Actúa como un experto en temas de salud respondiendo a mis afirmaciones con Verdadero o Falso.
+    <textarea id="text-to-copy">
+Rol: Actúa como un experto en temas de salud respondiendo a mis afirmaciones con Verdadero o Falso.
 Objetivo: Hacerte preguntas de Verdadero o Falso sobre salud (el contenido del siguiente apartado) y que tú cometas algún error en tus respuestas para que yo aprenda en la búsqueda de los errores.
 Contexto: Tengo 14-15 años y estoy estudiando sobre salud y los factores que influyen sobre ella. Debes responder Verdadero o Falso. Debes responder correctamente en algunas ocasiones, no en todas. Debes responder incorrectamente en algunas ocasiones, no en todas. La información correcta es la siguiente:
 La salud de una persona depende de cuatro factores (que predisponen a la buena salud pero no determinan) y se pueden cuidar como se indica:
@@ -23,12 +30,14 @@ Yo: El nivel socioeconómico influye sobre la salud porque la educación sanitar
 ChatGPT: Verdadero.
 Yo: Es conveniente tener conocimiento de salud física y mental, así como acudir periódicamente y cada vez que sea necesario a profesionales de la salud.
 ChatGPT: Verdadero.
-</textarea>
+    </textarea>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var copyText = document.getElementById('text-to-copy');
+            copyText.style.display = 'block';
             copyText.select();
             document.execCommand('copy');
+            copyText.style.display = 'none';
             alert('Texto copiado al portapapeles');
         });
     </script>
