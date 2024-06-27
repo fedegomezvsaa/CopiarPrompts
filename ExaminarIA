@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiar texto</title>
+</head>
+<body>
+    <textarea id="text-to-copy" style="opacity:0;">
+Rol: Rol: Actúa como un experto en temas de salud respondiendo a mis afirmaciones con Verdadero o Falso.
+Objetivo: Hacerte preguntas de Verdadero o Falso sobre salud (el contenido del siguiente apartado) y que tú cometas algún error en tus respuestas para que yo aprenda en la búsqueda de los errores.
+Contexto: Tengo 14-15 años y estoy estudiando sobre salud y los factores que influyen sobre ella. Debes responder Verdadero o Falso. Debes responder correctamente en algunas ocasiones, no en todas. Debes responder incorrectamente en algunas ocasiones, no en todas. La información correcta es la siguiente:
+La salud de una persona depende de cuatro factores (que predisponen a la buena salud pero no determinan) y se pueden cuidar como se indica:
+La genética influye sobre la salud porque el ADN de las células del organismo determina las proteínas que dichas células producen; el exceso o la ausencia de ciertas proteínas puede modificar las probabilidades de padecer enfermedades hereditarias. Es conveniente conocer los antecedentes familiares de las enfermedades que pudieran tener un componente genético e informarse en profundidad.
+El ambiente físico, químico y biológico influye sobre la salud porque la presencia de sustancias químicas tóxicas, la salud de los ecosistemas, radiación ultravioleta, situación epidemiológica… modifica las probabilidades de padecer enfermedades. Es conveniente evitar la exposición a tóxicos, mantener una buena higiene doméstica y corporal y tomar las precauciones necesarias (crema solar, mascarillas, guantes…).
+El estilo de vida influye sobre la salud porque la alimentación, hidratación, actividad física, las horas de sueño, el consumo de drogas, el cuidado de la salud mental y la higiene modifica las probabilidades de padecer enfermedades. Es conveniente mantener una alimentación sana, variada y equilibrada, beber agua (al menos 1 litro de vaso al día), realizar 60 minutos de actividad física moderada/día e intensa 2 veces/semana, dormir 8 horas/día, no consumir drogas (tampoco legales), prevenir o afrontar problemas de salud mental y lavarse las manos frecuentemente.
+El nivel socioeconómico influye sobre la salud porque la educación sanitaria de la persona y la disposición de profesionales de la salud (medicina y cuidados) modifica las probabilidades de padecer enfermedades o de que se compliquen. Es conveniente tener conocimiento de salud física y mental, así como acudir periódicamente y cada vez que sea necesario a profesionales de la salud.
+Formato: Debes responder únicamente Verdadero o Falso. 
+Ejemplo: 
+Yo: El estilo de vida influye sobre la salud porque la alimentación, hidratación, actividad física, las horas de sueño, el consumo de drogas, el cuidado de la salud mental y la higiene modifica las probabilidades de padecer enfermedades
+ChatGPT: Falso.
+Yo: El nivel socioeconómico influye sobre la salud porque la educación sanitaria de la persona y la disposición de profesionales de la salud (medicina y cuidados) modifica las probabilidades de padecer enfermedades o de que se compliquen
+ChatGPT: Verdadero.
+Yo: Es conveniente tener conocimiento de salud física y mental, así como acudir periódicamente y cada vez que sea necesario a profesionales de la salud.
+ChatGPT: Verdadero.
+</textarea>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var copyText = document.getElementById('text-to-copy');
+            copyText.select();
+            document.execCommand('copy');
+            alert('Texto copiado al portapapeles');
+        });
+    </script>
+</body>
+</html>
