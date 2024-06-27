@@ -23,17 +23,21 @@ Yo: El nivel socioeconómico influye sobre la salud porque la educación sanitar
 ChatGPT: Verdadero.
 Yo: Es conveniente tener conocimiento de salud física y mental, así como acudir periódicamente y cada vez que sea necesario a profesionales de la salud.
 ChatGPT: Verdadero.
-                ";
+               ";  // El texto que queremos copiar
             var textarea = document.createElement("textarea");
-            document.body.appendChild(textarea);
-            textarea.value = text;
-            textarea.select();
-            document.execCommand("copy");
-            document.body.removeChild(textarea);
-            alert("Copiado el prompt para la actividad de Examinar a la IA");
+            document.body.appendChild(textarea);  // Añadimos el textarea al cuerpo del documento
+            textarea.value = text;  // Asignamos el texto al textarea
+            textarea.select();  // Seleccionamos el contenido del textarea
+            document.execCommand("copy");  // Ejecutamos el comando de copia
+            document.body.removeChild(textarea);  // Eliminamos el textarea del DOM
+            alert("Texto copiado al portapapeles");  // Mostramos una alerta de confirmación
         }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            copyToClipboard();  // Ejecutamos la función cuando el DOM esté completamente cargado
+        });
     </script>
 </head>
-<body onload="copyToClipboard()">
+<body>
 </body>
 </html>
