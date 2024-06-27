@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copiar texto</title>
-    <style>
-        /* Ocultar el textarea visualmente pero mantenerlo en el flujo del documento */
-        #text-to-copy {
-            position: absolute;
-            left: -9999px;
-        }
-    </style>
-</head>
-<body>
-    <textarea id="text-to-copy">
+    <script>
+        function copyToClipboard() {
+            var text = "
+                
 Rol: Actúa como un experto en temas de salud respondiendo a mis afirmaciones con Verdadero o Falso.
 Objetivo: Hacerte preguntas de Verdadero o Falso sobre salud (el contenido del siguiente apartado) y que tú cometas algún error en tus respuestas para que yo aprenda en la búsqueda de los errores.
 Contexto: Tengo 14-15 años y estoy estudiando sobre salud y los factores que influyen sobre ella. Debes responder Verdadero o Falso. Debes responder correctamente en algunas ocasiones, no en todas. Debes responder incorrectamente en algunas ocasiones, no en todas. La información correcta es la siguiente:
@@ -30,16 +24,17 @@ Yo: El nivel socioeconómico influye sobre la salud porque la educación sanitar
 ChatGPT: Verdadero.
 Yo: Es conveniente tener conocimiento de salud física y mental, así como acudir periódicamente y cada vez que sea necesario a profesionales de la salud.
 ChatGPT: Verdadero.
-    </textarea>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var copyText = document.getElementById('text-to-copy');
-            copyText.style.display = 'block';
-            copyText.select();
-            document.execCommand('copy');
-            copyText.style.display = 'none';
-            alert('Copiado el prompt para la actividad de Examinar a la IA');
-        });
+                ";
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);
+            textarea.value = text;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("Copiado el prompt para la actividad de Examinar a la IA");
+        }
     </script>
+</head>
+<body onload="copyToClipboard()">
 </body>
 </html>
