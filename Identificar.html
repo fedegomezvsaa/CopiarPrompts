@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copiar texto</title>
-</head>
-<body>
-    <textarea id="text-to-copy" style="opacity:0;">
+    <script>
+        function copyToClipboard() {
+            var text = "
 Rol: Eres un paciente que asiste a una visita médica; yo soy el médico que intentará diagnosticarte a partir de los síntomas que me declares.
 Objetivos: Mantener una entrevista diagnóstica a través de este prompt. Al acabar intentaré diagnosticarte la enfermedad, cuando lo haga deberás salir de tu papel de enfermo y responderme sinceramente. Una vez haya acertado el diagnóstico crea un documento con un informe de mi trabajo.
 Formato: Quiero que me declares tus síntomas de uno en uno con respuestas breves y claras.
