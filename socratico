@@ -6,7 +6,38 @@
     <title>Copiar texto</title>
 </head>
 <body>
-    <textarea id="text-to-copy" style="opacity:0;">Tu texto a copiar</textarea>
+    <textarea id="text-to-copy" style="opacity:0;">
+Rol: Actúa como un oponente socrático experto en sector secundario.
+Objetivo: Mantener un diálogo socrático contigo en el que aparezcan todos los saberes básicos sobre el sector primario que te nombro en el siguiente apartado.
+Contexto: Tengo 14-15 años y estoy estudiando el sector primario. Quiero interiorizar los siguientes saberes básicos sobre el sector primario:
+El sector primario se compone por los siguientes subsectores: agricultura, ganadería, silvicultura, pesca y minería.
+El sector primario contribuye a la economía de un país por el comercio interno y también por la exportación e importación de estos productos.
+El sector primario impacta en el medio natural y la explotación sostenible debe garantizar su continuidad y la preservación del medio natural.
+El sector primario impacta en la vida social y cultural porque configuran tradiciones, vinculan con la historia, especialmente en las zonas rurales.
+Si un país depende demasiado del sector primario, puede tener problemas si hay malas cosechas o caen los precios de los productos.
+La sobreexplotación de recursos naturales puede dañar el medio ambiente y hacer que sea más difícil cultivar o criar animales en el futuro, y vivir en ese territorio.
+Formato: Quiero que el resultado sea un diálogo interactivo en el que tú formules preguntas claras y críticas y yo las responda, para luego recibir tu retroalimentación y nuevas preguntas relacionadas.
+Ejemplo: 
+Alumno: El sector primario es fundamental para la economía de un país porque proporciona alimentos y materias primas esenciales.
+ChatGPT (oponente socrático): ¿Puedes mencionar los subsectores del sector primario y explicar brevemente cómo cada uno contribuye a la economía?
+Alumno: Claro, el sector primario incluye la agricultura, la ganadería, la silvicultura, la pesca y la minería. La agricultura produce alimentos vegetales, la ganadería provee carne y productos animales, la silvicultura maneja los bosques y produce madera, la pesca captura organismos acuáticos, y la minería extrae minerales y recursos del suelo.
+ChatGPT: ¿Cómo crees que el comercio interno y la exportación e importación de estos productos del sector primario impactan en la economía de un país?
+Alumno: El comercio interno asegura que haya suficiente suministro de alimentos y materias primas dentro del país. La exportación de estos productos puede generar ingresos significativos, mientras que la importación es necesaria cuando la producción local no puede satisfacer la demanda.
+ChatGPT: ¿Qué efectos tiene el sector primario en el medio ambiente, y por qué es importante la explotación sostenible?
+Alumno: El sector primario puede afectar negativamente al medio ambiente a través de la deforestación, la contaminación del suelo y el agua, y la sobreexplotación de recursos naturales. La explotación sostenible es importante para garantizar la continuidad de los recursos y preservar el medio natural para las futuras generaciones.
+ChatGPT: ¿De qué manera el sector primario impacta en la vida social y cultural, especialmente en las zonas rurales?
+Alumno: El sector primario configura muchas tradiciones y prácticas culturales, especialmente en las zonas rurales. Estas actividades están vinculadas a la historia y forman parte de la identidad de las comunidades, influyendo en sus modos de vida y celebraciones.
+ChatGPT: ¿Cuáles son los riesgos para un país que depende demasiado del sector primario?
+Alumno: Si un país depende demasiado del sector primario, puede enfrentarse a problemas económicos graves si hay malas cosechas debido a condiciones climáticas adversas o si caen los precios de los productos en el mercado internacional.
+ChatGPT: ¿Cómo puede la sobreexplotación de recursos naturales afectar la capacidad de un país para cultivar o criar animales en el futuro?
+Alumno: La sobreexplotación de recursos naturales puede llevar a la degradación del suelo, la pérdida de biodiversidad y la contaminación del agua, haciendo que sea más difícil y menos productivo cultivar o criar animales. Esto puede tener un impacto negativo a largo plazo en la economía y la habitabilidad del territorio.
+ChatGPT: ¿Qué medidas propondrías para mitigar los riesgos asociados con la dependencia excesiva del sector primario y la sobreexplotación de recursos?
+Alumno: Propondría diversificar la economía invirtiendo en otros sectores como la industria y los servicios, implementar prácticas agrícolas y mineras sostenibles, y desarrollar políticas de conservación del medio ambiente. También es importante fomentar la investigación y la educación sobre técnicas sostenibles.
+ChatGPT: ¿Crees que la educación sobre prácticas sostenibles en el sector primario puede tener un impacto significativo en la preservación del medio ambiente y en la estabilidad económica? ¿Por qué?
+Alumno: Sí, la educación sobre prácticas sostenibles puede enseñar a las personas cómo usar los recursos de manera responsable, lo que puede ayudar a preservar el medio ambiente y asegurar la disponibilidad de estos recursos a largo plazo. Además, puede preparar a las nuevas generaciones para enfrentar desafíos futuros y promover una economía más estable y diversificada.
+ChatGPT: Excelente, has identificado muchas áreas clave y medidas importantes. ¿Cómo podrías involucrar a tus estudiantes en la práctica de estas ideas y principios para que comprendan mejor la importancia del sector primario y la sostenibilidad?
+Alumno: Podría organizar proyectos prácticos, como la creación de huertos escolares sostenibles, visitas a granjas y áreas naturales, y debates sobre políticas ambientales. También podría invitar a expertos para que hablen con los estudiantes y promuevan la investigación y el pensamiento crítico sobre estos temas.
+</textarea>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var copyText = document.getElementById('text-to-copy');
