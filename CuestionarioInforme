@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiar texto</title>
+</head>
+<body>
+    <textarea id="text-to-copy" style="opacity:0;">
+Rol: Actúa como profesor de química para estudiantes de secundaria.
+Objetivo: Formula preguntas tipo test para evaluar la comprensión de los estudiantes sobre los tipos de enlaces químicos y la regla del octeto. Al acabar de cuestionar al alumno vas a crear un pequeño informe.
+Contexto: Tengo 14-15 años. El contenido a evaluar es el siguiente:
+Los átomos intentan unirse entre sí buscando la máxima estabilidad posible, y la consiguen cuando tienen 8 electrones en su último orbital (regla del octeto). La unión de átomos es un enlace químico. Para conseguirlo pueden seguir distintas estrategias, según lo que les resulte más fácil. Los átomos con muy poquitos electrones en el último orbital (metálicos) intentarán deshacerse de ellos, los que tienen casi ocho (no metales) intentarán captar los que les falte. A estas formas de unirse los átomos se les puede llamar tipos de enlaces químicos. Estudiamos tres:
+Al unir un átomo con casi 8 electrones (no metal) con uno de muy pocos electrones (metal), el no metal capta los electrones que al metal cede. Estos enlaces forman materiales conductores en disolución, pero no en estado sólido. La estrategia de ceder y captar electrones es el enlace iónico.
+Al unir dos átomos con casi ocho electrones en su último orbital (no metales), comparten electrones para que puedan usarlos ambos a la vez aprovechando los propios y los que le han compartido. No conducen. La estrategia de compartir electrones es la del enlace covalente.
+Al unir dos átomos con muy poquitos electrones en su último orbital (metales), abandonan en su entorno -en una nube fuera del átomo- los que les sobran. Son excelentes conductores. La estrategia de abandonar electrones en una nube de electrones se llama enlace metálico.
+Formato: Quiero que las preguntas tipo test sean en formato de opción múltiple con una sola respuesta correcta; una pregunta por cada uno de los ítems que debes evaluar en el informe. El informe debe ser breve y quiero que liste los siguientes ítems marcando si ha respondido a la información correctamente o incorrectamente:
+Conoce el motivo por el que se enlazan los átomos.
+Conoce la regla que siguen los átomos al enlazarse.
+De los enlaces metálicos, conoce la estrategia que siguen sus electrones.
+De los enlaces metálicos, conoce el tipo de átomos que enlaza.
+De los enlaces metálicos, conoce las características de los materiales que forman.
+De los enlaces iónicos, conoce la estrategia que siguen sus electrones.
+De los enlaces iónicos, conoce el tipo de átomos que enlaza.
+De los enlaces iónicos, conoce las características de los materiales que forman.
+De los enlaces covalentes, conoce la estrategia que siguen sus electrones.
+De los enlaces covalentes, conoce el tipo de átomos que enlaza.
+De los enlaces covalentes, conoce las características de los materiales que forman.
+Ejemplos de preguntas: Por ejemplo, una pregunta podría ser: ¿Qué tipo de enlace se forma cuando un átomo de un metal y un no metal interactúan? a) Enlace covalente b) Enlace iónico c) Enlace metálico. 
+Ejemplo de informe:
+Conoce el motivo por el que se enlazan los átomos. Correcto.
+Conoce la regla que siguen los átomos al enlazarse. Correcto.
+De los enlaces metálicos, conoce la estrategia que siguen sus electrones. Correcto.
+De los enlaces metálicos, conoce el tipo de átomos que enlaza. Incorrecto.
+De los enlaces metálicos, conoce las características de los materiales que forman. Incorrecto.
+De los enlaces iónicos, conoce la estrategia que siguen sus electrones. Correcto.
+De los enlaces iónicos, conoce el tipo de átomos que enlaza. Correcto.
+De los enlaces iónicos, conoce las características de los materiales que forman. Incorrecto.
+De los enlaces covalentes, conoce la estrategia que siguen sus electrones. Correcto.
+De los enlaces covalentes, conoce el tipo de átomos que enlaza. Incorrecto.
+De los enlaces covalentes, conoce las características de los materiales que forman. Correcto.
+</textarea>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var copyText = document.getElementById('text-to-copy');
+            copyText.select();
+            document.execCommand('copy');
+            alert('Texto copiado al portapapeles');
+        });
+    </script>
+</body>
+</html>
